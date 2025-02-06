@@ -38,11 +38,30 @@ a {
 
 .menu li:hover {
     background-color: var(--cor-hover);
-    
+
 }
 
 .menu img {
     height: 16px;
 
 }
+main {
+    display: flex;
+    flex-direction: 1;
+    width: 100vw;
+}
+.conteudo {
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
+    width: 700px;
+    height: 800px;
+}
+
+#produtos img{
+    height: 450px;
+}
+
+#
 
