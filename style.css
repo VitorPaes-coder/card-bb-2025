@@ -1,5 +1,5 @@
 :root {
-    --cor-hover: white;
+    --cor-hover: rgba(255, 255, 255, 0.281);
 }
 * {
     padding: 0;
@@ -15,6 +15,13 @@ ul, ol, li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .menu {
@@ -47,8 +54,10 @@ a {
 }
 main {
     display: flex;
-    flex-direction: 1;
+    flex: 1;
     width: 100vw;
+    padding: 12px;
+    overflow-x: hidden;
 }
 .conteudo {
     padding: 60px;
@@ -59,9 +68,121 @@ main {
     height: 800px;
 }
 
-#produtos img{
-    height: 450px;
+main{
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    padding: 12px;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-#
+#produtos{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+   
+}
 
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 200px;
+    height: 350px;
+    border-radius: 12px;
+    background-color: var(--cor-card);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.conteudo{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5%;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #fdfdfd;
+    justify-content: center;
+}
+
+.conteudo h2{
+    color: var(--cor-card);
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+}
+
+.conteudo span{
+    font-size: 12px;
+    text-align: center;
+    font-family: "Barlow Semi Condensed", serif;
+    padding-bottom: 3px;
+}
+
+.conteudo img{
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.conteudo h4 {
+    font-family: "Barlow Semi Condensed";
+    color: rgba(8, 5, 1, 0.658);
+}
+
+.conteudo div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo div span{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Bebas Neue", serif;
+}
+
+.conteudo div ul{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    color: var(--cor-size);
+}
+
+
+.card button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    color: black;
+    font-weight: bold;
+    background-color: #ffd700;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    font-family: "Bebas Neue", serif;
+    font-size: 20PX;
+}
+
+.card button:hover{
+    background-color: #dfbe00;
+}
